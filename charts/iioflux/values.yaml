@@ -18,7 +18,8 @@ config:
       port: 8086
       database: iioflux
       username: janedoe
-      #password: IloveJ0hn
+secrets:
+  influxdb.connection.password: IloveJ0hn
 
 imagePullSecrets: []
 nameOverride: ""
