@@ -9,16 +9,17 @@ config:
   sma:
     url: https://sma.home.lan
     group: usr
-    password: 'SuperSecure1'
   influxdb:
     host: influxdb.influxdb
     port: 8086
     username: smapy
     password: 12345
-    database: smapy
   tags:
     location: homeplant
   interval: 30
+secrets:
+  sma.password: 'SuperSecure1'
+  influxdb.connection.password: smapy
 
 imagePullSecrets: []
 nameOverride: ""
