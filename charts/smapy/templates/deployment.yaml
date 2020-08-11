@@ -33,19 +33,18 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         volumeMounts:
         - name: config
-          mountPath: /config.yaml
-          subPath: config.yaml
-        args:
-        - python3
-        - submitter.py
-        - --config
-        - /config.yaml
+          mountPath: /config
+        - name: secrets
+          mountPath: /secrets
         resources:
           {{- toYaml .Values.resources | nindent 10 }}
       volumes:
       - name: config
         configMap:
           name: {{ .Chart.Name }}
+      - name: secrets
+        secret:
+          secretName: {{ .Chart.Name }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
