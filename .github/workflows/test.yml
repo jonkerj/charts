@@ -1,0 +1,21 @@
+name: Lint and Test Charts
+
+on:
+  pull_request:
+    paths:
+    - 'charts/*'
+
+jobs:
+  lint-charts:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Configure Git
+      run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+    - name: Lint the charts
+      uses: helm/chart-testing-action@v1.0.0
+      with:
+        command: lint
