@@ -4,3 +4,7 @@ description: Submits IIOd measurements to InfluxDB
 type: application
 version: 0.1.0
 appVersion: v0.1.0
+home: https://github.com/jonkerj/iioflux
+maintainers:
+- name: jonkerj
+  email: jorik@kippendief.biz
