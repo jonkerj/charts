@@ -1,0 +1,33 @@
+apiVersion: v1
+entries:
+  iioflux:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2020-08-11T13:04:30.324827844Z"
+    description: Submits IIOd measurements to InfluxDB
+    digest: 793f0ba1e080e1be7a8a97c835f6caf6bae35387053235e6b0522b420e8e5139
+    home: https://github.com/jonkerj/iioflux
+    maintainers:
+    - email: jorik@kippendief.biz
+      name: jonkerj
+    name: iioflux
+    type: application
+    urls:
+    - https://github.com/jonkerj/charts/releases/download/iioflux-0.1.0/iioflux-0.1.0.tgz
+    version: 0.1.0
+  smapy:
+  - apiVersion: v2
+    appVersion: v0.1.1
+    created: "2020-08-11T13:04:30.427521913Z"
+    description: A SMA Inverter to InfluxDB submitter
+    digest: 2fbb270036b938be5849ac397f92f41542ae8f7850d405fd7eb4d932c4e4ed86
+    home: https://github.com/jonkerj/smapy
+    maintainers:
+    - email: jorik@kippendief.biz
+      name: jonkerj
+    name: smapy
+    type: application
+    urls:
+    - https://github.com/jonkerj/charts/releases/download/smapy-0.1.1/smapy-0.1.1.tgz
+    version: 0.1.1
+generated: "2020-08-11T13:04:30.15415829Z"
