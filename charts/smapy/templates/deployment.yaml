@@ -36,11 +36,6 @@ spec:
           mountPath: /config
         - name: secrets
           mountPath: /secrets
-        args:
-        - python3
-        - submitter.py
-        - --config
-        - /config
         resources:
           {{- toYaml .Values.resources | nindent 10 }}
       volumes:
