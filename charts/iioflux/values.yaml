@@ -18,6 +18,7 @@ config:
       port: 8086
       database: iioflux
       username: janedoe
+existingSecret: false
 secrets:
   influxdb.connection.password: IloveJ0hn
 

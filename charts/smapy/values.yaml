@@ -17,6 +17,7 @@ config:
   tags:
     location: homeplant
   interval: 30
+existingSecret: false
 secrets:
   sma.password: 'SuperSecure1'
   influxdb.connection.password: smapy
