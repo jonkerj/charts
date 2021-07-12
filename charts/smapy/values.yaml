@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: jonkerj/smapy
+  repository: ghcr.io/jonkerj/smapy
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
 #  tag: ""
