@@ -2,7 +2,7 @@ apiVersion: v2
 name: smapy
 description: A SMA Inverter to InfluxDB submitter
 type: application
-version: 0.3.3
+version: 0.3.4
 appVersion: v0.4.1
 home: https://github.com/jonkerj/smapy
 maintainers:
