@@ -5,22 +5,17 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
 #  tag: ""
 
-config:
-  sma:
-    url: https://sma.home.lan
-    group: usr
-  influxdb:
-    host: influxdb.influxdb
-    port: 8086
-    username: smapy
-    password: 12345
-  tags:
-    location: homeplant
-  interval: 30
-existingSecret: false
-secrets:
-  sma.password: 'SuperSecure1'
-  influxdb.connection.password: smapy
+env:
+  SMAPY_LOGLEVEL: DEBUG
+  SMAPY_URL: https://sma.home.lan
+  SMAPY_INTERVAL: '30'
+  SMAPY_PASSWORD: 'SuperSecure1'
+  INFLUXDB_V2_ORG: '-'
+  INFLUXDB_V2_BUCKET: sma/autogen
+  INFLUXDB_V2_TAG_LOCATION: homeplant
+  INFLUXDB_V2_URL: http://influxdb.influxdb:8086/
+  INFLUXDB_V2_TOKEN: 'smapy:12345'
+envSecret: smapy-secrets
 
 imagePullSecrets: []
 nameOverride: ""
