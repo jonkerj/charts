@@ -6,15 +6,15 @@ image:
 #  tag: ""
 
 env:
-  SMAPY_LOGLEVEL: DEBUG
-  SMAPY_URL: https://sma.home.lan
+#  SMAPY_LOGLEVEL: DEBUG
+#  SMAPY_URL: https://sma.home.lan
   SMAPY_INTERVAL: '30'
-  SMAPY_PASSWORD: 'SuperSecure1'
-  INFLUXDB_V2_ORG: '-'
-  INFLUXDB_V2_BUCKET: sma/autogen
-  INFLUXDB_V2_TAG_LOCATION: homeplant
+#  SMAPY_PASSWORD: 'SuperSecure1'
+#  INFLUXDB_V2_ORG: '-'
+#  INFLUXDB_V2_BUCKET: sma/autogen
+#  INFLUXDB_V2_TAG_LOCATION: homeplant
   INFLUXDB_V2_URL: http://influxdb.influxdb:8086/
-  INFLUXDB_V2_TOKEN: 'smapy:12345'
+#  INFLUXDB_V2_TOKEN: 'smapy:12345'
 envSecret: smapy-secrets
 
 imagePullSecrets: []
