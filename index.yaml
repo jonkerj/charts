@@ -32,6 +32,20 @@ entries:
   smapy:
   - apiVersion: v2
     appVersion: v0.4.1
+    created: "2021-07-12T13:35:03.460461686Z"
+    description: A SMA Inverter to InfluxDB submitter
+    digest: e142be9a8ff7224fd644de534031b9616f6d9ccad6a32a9b86d301bfe8113a81
+    home: https://github.com/jonkerj/smapy
+    maintainers:
+    - email: jorik@kippendief.biz
+      name: jonkerj
+    name: smapy
+    type: application
+    urls:
+    - https://github.com/jonkerj/charts/releases/download/smapy-0.3.4/smapy-0.3.4.tgz
+    version: 0.3.4
+  - apiVersion: v2
+    appVersion: v0.4.1
     created: "2021-07-12T13:25:06.231255238Z"
     description: A SMA Inverter to InfluxDB submitter
     digest: 2e318b08585cb04796e96845e9f1f66543b620545aa05aee45e7d568d5965f1b
